@@ -1,0 +1,49 @@
+.navbar {
+    width: 100%;
+    padding: 0.7rem 5%;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.top_heading {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.theme_changer {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#theme_changer_font {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+/* header light */
+
+.navbar_light {
+    color: hsl(200, 15%, 8%);
+    background-color: white;
+    box-shadow: 0px 0px 15px #bbbbbb;
+}
+
+/* header dark */
+
+.navbar_dark {
+    background-color: hsl(209, 23%, 22%);
+    box-shadow: 0px 0px 15px #131313;
+}
+
+.navbar_dark {
+    color: white;
+}
+/* Media Queries */
+@media (max-width: 800px) {
+    .top_heading {
+        font-size: 1.5rem;
+    }
+
+    .next_mode {
+        display: none;
+    }
+}

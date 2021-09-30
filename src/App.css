@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+* :disabled {
+  opacity: .65;
+}
+
+.body_container {
+  height: 100vh;
+}
+
+/* Light mode */
+.body_container_light {
+  background-color: hsl(0, 0%, 98%);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* Dark mode */
+.body_container_dark {
+  background-color: hsl(207, 26%, 17%);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

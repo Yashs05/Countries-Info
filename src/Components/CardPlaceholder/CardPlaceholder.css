@@ -1,0 +1,46 @@
+.placeholder_container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 22%;
+}
+
+/* Dark */
+.placeholder_dark .card {
+    background-color: hsl(209, 23%, 22%);
+}
+
+.placeholder_dark .placeholder {
+    background-color: aliceblue;
+}
+
+
+@media (max-width: 1300px) {
+    .card {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .card {
+        width: 28%;
+    }
+}
+
+@media (max-width: 850px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 75%;
+    }
+
+    .placeholder_container {
+        justify-content: center;
+    }
+}

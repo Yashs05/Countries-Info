@@ -1,0 +1,166 @@
+.countries_cards_container {
+    padding: 0 5%;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.row {
+    margin: 0;
+}
+
+.cards_row {
+    gap: 3.52vw
+}
+
+.country_card {
+    width: 22.03%;
+    height: 22rem;
+    padding: 0;
+}
+
+.country_card img {
+    object-fit: cover;
+}
+
+.card a {
+    text-decoration: none;
+    height: 100%;
+}
+
+.card-body {
+    padding: 1.5vw 1.2vw;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.card-img-top {
+    height: 50%;
+}
+
+.list-group-item {
+    border: none;
+    padding: 0;
+    font-size: 0.95rem;
+}
+
+.details {
+    font-weight: 600;
+}
+
+/* Light */
+
+.countries_light {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.countries_light a {
+    color: unset;
+}
+
+.countries_light .card {
+    box-shadow: 0px 0px 25px #bbbbbb
+}
+
+.show_hide_container {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.show_hide_containers {
+    display: flex;
+    align-items: center;
+}
+
+/* Dark */
+.countries_dark {
+    background-color: hsl(207, 26%, 17%);
+}
+
+.countries_dark .list-group-item, .countries_dark h4, .countries_dark a {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 98%);
+}
+
+.countries_dark .card {
+    border: none;
+    box-shadow: 0px 0px 25px #131313;
+}
+
+.countries_dark + div {
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 98%);
+}
+
+/* Media queries */
+@media (max-width: 1300px) {
+    .country_card {
+      height: 24rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .country_card {
+      width: 30.72%;
+      height: 26rem;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+
+    .card-body {
+        padding: 1.5vw 1.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .country_card {
+      width: 48.04%;
+    }
+
+    .card-body {
+        padding: 1.5vw 2.5vw;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .cards_row {
+        justify-content: center;
+    }
+
+    .country_card {
+        width: 75%;
+    }
+
+    .show_more, .hide_less {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .country_card {
+        width: 100%;
+    }
+
+    .countries_cards_container {
+        padding: 0 10%;
+    }
+
+    .cards_row {
+        gap: 10vw;
+    }
+
+    .card-body {
+        padding: 1.5vw 4vw;
+    }
+}
